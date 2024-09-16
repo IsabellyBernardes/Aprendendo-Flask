@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>PSA-Pagamentos por serviços ambientais</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+</head>
+
+<body>
+    <h1>PSA-IFPE</h1>
+    {% if usuario %}
+    <p>Bem-vindo ao projeto PSA, {{ usuario }}!</p>
+    {% else%}
+    <p>Bem-vindo ao projeto PSA</p>
+    {% endif %}
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</body>
+
+</html>
